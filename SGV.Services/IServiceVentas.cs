@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -56,6 +57,8 @@ namespace SGV.Services
         [DataMember]
         public string apellidos { get; set; }
         [DataMember]
+        [DataType(DataType.Date)]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public System.DateTime fechanacimiento { get; set; }
         [DataMember]
         public Nullable<int> ciudadid { get; set; }

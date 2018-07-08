@@ -11,8 +11,8 @@
 namespace SGV.Web.ServiceReferenceVentas {
     using System.Runtime.Serialization;
     using System;
-    
-    
+    using System.ComponentModel.DataAnnotations;
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Ciudad", Namespace="http://schemas.datacontract.org/2004/07/SGV.Services")]

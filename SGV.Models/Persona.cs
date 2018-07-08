@@ -11,7 +11,8 @@ namespace SGV.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Persona
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,6 +24,7 @@ namespace SGV.Models
         public int id { get; set; }
         public string nombres { get; set; }
         public string apellidos { get; set; }
+        [DataType(DataType.Date)]
         public System.DateTime fechanacimiento { get; set; }
         public Nullable<int> ciudadid { get; set; }
     
