@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bd203349-f50b-4dcb-949d-c32aa6d905c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:41571/ServiceVentas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceVentas.xsd" MetadataType="Schema" ID="bb4c5e48-0a45-4a53-a705-22bc1b0e5652" SourceId="1" SourceUrl="http://localhost:41571/ServiceVentas.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceVentas.wsdl" MetadataType="Wsdl" ID="532abe33-3bf5-4058-82b7-395faf3645ac" SourceId="1" SourceUrl="http://localhost:41571/ServiceVentas.svc?wsdl" />
+    <MetadataFile FileName="ServiceVentas.disco" MetadataType="Disco" ID="a715fde5-7e15-4a2b-821d-759e015ebb11" SourceId="1" SourceUrl="http://localhost:41571/ServiceVentas.svc?disco" />
+    <MetadataFile FileName="ServiceVentas1.xsd" MetadataType="Schema" ID="a349aee7-468e-4db4-bbd5-feb0e49ed098" SourceId="1" SourceUrl="http://localhost:41571/ServiceVentas.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceVentas2.xsd" MetadataType="Schema" ID="698ef84f-56fd-4d29-aca1-b389852537bb" SourceId="1" SourceUrl="http://localhost:41571/ServiceVentas.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

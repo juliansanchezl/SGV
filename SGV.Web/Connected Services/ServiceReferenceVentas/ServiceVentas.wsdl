@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceVentas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:41571/ServiceVentas.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:41571/ServiceVentas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:41571/ServiceVentas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SGV.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceVentas_GetDataCiudadesAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataCiudadesAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_GetDataCiudadesAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataCiudadesAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_CreatePersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePersona" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_CreatePersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_UpdatePersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersona" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_UpdatePersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_DeletePersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersona" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_DeletePersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_GetDataPersonasAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataPersonasAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_GetDataPersonasAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataPersonasAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_GetDataPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_GetDataPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataPersonaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceVentas">
+    <wsdl:operation name="GetDataCiudadesAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/GetDataCiudadesAll" message="tns:IServiceVentas_GetDataCiudadesAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/GetDataCiudadesAllResponse" message="tns:IServiceVentas_GetDataCiudadesAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/CreatePersona" message="tns:IServiceVentas_CreatePersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/CreatePersonaResponse" message="tns:IServiceVentas_CreatePersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/UpdatePersona" message="tns:IServiceVentas_UpdatePersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/UpdatePersonaResponse" message="tns:IServiceVentas_UpdatePersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/DeletePersona" message="tns:IServiceVentas_DeletePersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/DeletePersonaResponse" message="tns:IServiceVentas_DeletePersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPersonasAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/GetDataPersonasAll" message="tns:IServiceVentas_GetDataPersonasAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/GetDataPersonasAllResponse" message="tns:IServiceVentas_GetDataPersonasAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/GetDataPersona" message="tns:IServiceVentas_GetDataPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/GetDataPersonaResponse" message="tns:IServiceVentas_GetDataPersona_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceVentas" type="tns:IServiceVentas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataCiudadesAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/GetDataCiudadesAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePersona">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/CreatePersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersona">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/UpdatePersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersona">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/DeletePersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPersonasAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/GetDataPersonasAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPersona">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/GetDataPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceVentas">
+    <wsdl:port name="BasicHttpBinding_IServiceVentas" binding="tns:BasicHttpBinding_IServiceVentas">
+      <soap:address location="http://localhost:41571/ServiceVentas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
