@@ -183,6 +183,8 @@ namespace SGV.Web.ServiceReferenceVentas {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public System.DateTime fechanacimiento {
             get {
                 return this.fechanacimientoField;
