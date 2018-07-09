@@ -11,6 +11,7 @@ namespace SGV.DAL
 
         void Delete(TEntity entity);
         void Delete(long id);
+        void Delete(Expression<Func<TEntity, bool>> where);
 
         TEntity Find(long id);
         TEntity FindOne(Expression<Func<TEntity, bool>> where =null);

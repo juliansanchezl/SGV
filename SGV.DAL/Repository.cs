@@ -31,6 +31,15 @@ namespace SGV.DAL
             Context.Set<TEntity>().Remove(item);
         }
 
+        public void Delete(Expression<Func<TEntity, bool>> where)
+        {
+            var obj = Context.Set<TEntity>().Where(where).AsEnumerable();
+            foreach (var item in obj)
+            {
+                Context.Set<TEntity>().Remove(item);
+            }
+        }
+
         public TEntity Find(long id)
         {
             return Context.Set<TEntity>().Find(id);
